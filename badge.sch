@@ -1542,7 +1542,7 @@ Wire Wire Line
 Wire Wire Line
 	1550 1350 1400 1350
 Wire Wire Line
-	700  1450 600  1450
+	550  1450 700  1450
 Wire Wire Line
 	600  800  700  800 
 Wire Wire Line
@@ -1616,29 +1616,9 @@ Wire Wire Line
 	4500 4650 4500 7150
 Connection ~ 4500 4650
 Connection ~ 3300 7150
-Wire Wire Line
-	950  4850 1100 4850
-Wire Wire Line
-	950  4650 950  4850
-Wire Wire Line
-	850  4650 1100 4650
-Connection ~ 950  4650
-Wire Wire Line
-	1100 4750 950  4750
-Connection ~ 950  4750
-Wire Wire Line
-	950  5150 1100 5150
-Wire Wire Line
-	950  4950 950  5150
-Wire Wire Line
-	850  4950 1100 4950
-Connection ~ 950  4950
-Wire Wire Line
-	1100 5050 950  5050
-Connection ~ 950  5050
-Text Label 850  4950 2    60   ~ 0
+Text Label 1100 4750 2    60   ~ 0
 VCC
-Text Label 850  4650 2    60   ~ 0
+Text Label 1100 4650 2    60   ~ 0
 GND
 Text Label 1100 5250 2    60   ~ 0
 DIN
@@ -1661,7 +1641,6 @@ Text Label 2100 5250 2    60   ~ 0
 GND
 Text Label 2100 4650 2    60   ~ 0
 DIN
-NoConn ~ 2100 4750
 NoConn ~ 2100 4850
 NoConn ~ 2100 4950
 NoConn ~ 2100 5050
@@ -2651,7 +2630,7 @@ Wire Wire Line
 Wire Wire Line
 	12250 2550 12050 2550
 Wire Wire Line
-	12050 3650 12300 3650
+	12050 3650 12450 3650
 Wire Wire Line
 	12300 3650 12300 4450
 Wire Wire Line
@@ -2994,4 +2973,18 @@ Connection ~ 5850 4650
 Connection ~ 6450 4650
 Connection ~ 6050 7600
 Connection ~ 6650 7600
+Connection ~ 12300 3650
+Text Label 12450 3650 0    60   ~ 0
+DIN2
+Connection ~ 600  1450
+Text Label 550  1450 2    60   ~ 0
+DOUT2
+Text Label 1100 5150 2    60   ~ 0
+DOUT2
+Text Label 1100 5050 2    60   ~ 0
+DIN2
+Text Label 2100 4750 2    60   ~ 0
+DIN2
+NoConn ~ 1100 4850
+NoConn ~ 1100 4950
 $EndSCHEMATC
