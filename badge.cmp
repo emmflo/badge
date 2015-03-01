@@ -1,0 +1,1200 @@
+Cmp-Mod V01 Created by Cvpcb (2015-02-14 BZR 5415)-product   date = jeu. 26 févr. 2015 21:44:40 CET
+
+BeginCmp
+TimeStamp = /54EBD2BA;
+Reference = C1;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBE574;
+Reference = C2;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBF42C;
+Reference = C3;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBF474;
+Reference = C4;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F17E57;
+Reference = C5;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F4432B;
+Reference = C6;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F44711;
+Reference = C7;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBD420;
+Reference = C8;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBE57A;
+Reference = C9;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBF432;
+Reference = C10;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBF47A;
+Reference = C11;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F17E5D;
+Reference = C12;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F44331;
+Reference = C13;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F44717;
+Reference = C14;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBD46A;
+Reference = C15;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBE580;
+Reference = C16;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBF438;
+Reference = C17;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBF480;
+Reference = C18;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F17E63;
+Reference = C19;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F44337;
+Reference = C20;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F4471D;
+Reference = C21;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBD4B9;
+Reference = C22;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBE586;
+Reference = C23;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBF43E;
+Reference = C24;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBF486;
+Reference = C25;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F17E69;
+Reference = C26;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F4433D;
+Reference = C27;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F44723;
+Reference = C28;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBD505;
+Reference = C29;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBE58C;
+Reference = C30;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBF444;
+Reference = C31;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBF48C;
+Reference = C32;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F17E6F;
+Reference = C33;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F44343;
+Reference = C34;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F44729;
+Reference = C35;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBD552;
+Reference = C36;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBE592;
+Reference = C37;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBF44A;
+Reference = C38;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBF492;
+Reference = C39;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F17E75;
+Reference = C40;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F44349;
+Reference = C41;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F4472F;
+Reference = C42;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBDBC0;
+Reference = C43;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBE598;
+Reference = C44;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBF450;
+Reference = C45;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBF498;
+Reference = C46;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F17E7B;
+Reference = C47;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F4434F;
+Reference = C48;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F44735;
+Reference = C49;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBDBC6;
+Reference = C50;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBE59E;
+Reference = C51;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBF456;
+Reference = C52;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBF49E;
+Reference = C53;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F17E81;
+Reference = C54;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F44355;
+Reference = C55;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F4473B;
+Reference = C56;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBDBCC;
+Reference = C57;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBE5A4;
+Reference = C58;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBF45C;
+Reference = C59;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBF4A4;
+Reference = C60;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F17E87;
+Reference = C61;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F4435B;
+Reference = C62;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F44741;
+Reference = C63;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBDBD2;
+Reference = C64;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBE5AA;
+Reference = C65;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBF462;
+Reference = C66;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBF4AA;
+Reference = C67;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F17E8D;
+Reference = C68;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F44361;
+Reference = C69;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F44747;
+Reference = C70;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBDBD8;
+Reference = C71;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBE5B0;
+Reference = C72;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBF468;
+Reference = C73;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBF4B0;
+Reference = C74;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F17E93;
+Reference = C75;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F44367;
+Reference = C76;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F4474D;
+Reference = C77;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBDBDE;
+Reference = C78;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBE5B6;
+Reference = C79;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBF46E;
+Reference = C80;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EBF4B6;
+Reference = C81;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F17E99;
+Reference = C82;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F4436D;
+Reference = C83;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F44753;
+Reference = C84;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EF30A8;
+Reference = C85;
+ValeurCmp = CAPAPOL;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x02;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EF638D;
+Reference = P1;
+ValeurCmp = CONN_8;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x08;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EF72FE;
+Reference = P2;
+ValeurCmp = CONN_11;
+IdModule  = badge:Pin_Header_Straight_1x11_1.27mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA1370;
+Reference = WS1;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA194F;
+Reference = WS2;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA1A7B;
+Reference = WS3;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA1A9F;
+Reference = WS4;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA6C83;
+Reference = WS5;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA6CA7;
+Reference = WS6;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA6CCB;
+Reference = WS7;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA6CEF;
+Reference = WS8;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F122D4;
+Reference = WS9;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F122F8;
+Reference = WS10;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F36679;
+Reference = WS11;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F3669D;
+Reference = WS12;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA1435;
+Reference = WS13;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA1955;
+Reference = WS14;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA1A81;
+Reference = WS15;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA1AA5;
+Reference = WS16;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA6C89;
+Reference = WS17;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA6CAD;
+Reference = WS18;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA6CD1;
+Reference = WS19;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA6CF5;
+Reference = WS20;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F122DA;
+Reference = WS21;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F122FE;
+Reference = WS22;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F3667F;
+Reference = WS23;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F366A3;
+Reference = WS24;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA146A;
+Reference = WS25;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA195B;
+Reference = WS26;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA1A87;
+Reference = WS27;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA1AAB;
+Reference = WS28;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA6C8F;
+Reference = WS29;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA6CB3;
+Reference = WS30;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA6CD7;
+Reference = WS31;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA6CFB;
+Reference = WS32;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F122E0;
+Reference = WS33;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F12304;
+Reference = WS34;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F36685;
+Reference = WS35;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F366A9;
+Reference = WS36;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA16C1;
+Reference = WS37;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA1961;
+Reference = WS38;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA1A8D;
+Reference = WS39;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA1AB1;
+Reference = WS40;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA6C95;
+Reference = WS41;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA6CB9;
+Reference = WS42;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA6CDD;
+Reference = WS43;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA6D01;
+Reference = WS44;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F122E6;
+Reference = WS45;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1230A;
+Reference = WS46;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F3668B;
+Reference = WS47;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F366AF;
+Reference = WS48;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA16C7;
+Reference = WS49;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA1967;
+Reference = WS50;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA1A93;
+Reference = WS51;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA1AB7;
+Reference = WS52;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA6C9B;
+Reference = WS53;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA6CBF;
+Reference = WS54;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA6CE3;
+Reference = WS55;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA6D07;
+Reference = WS56;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F122EC;
+Reference = WS57;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F12310;
+Reference = WS58;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F36691;
+Reference = WS59;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F366B5;
+Reference = WS60;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA16CD;
+Reference = WS61;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA196D;
+Reference = WS62;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA1A99;
+Reference = WS63;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA1ABD;
+Reference = WS64;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA6CA1;
+Reference = WS65;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA6CC5;
+Reference = WS66;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA6CE9;
+Reference = WS67;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EA6D0D;
+Reference = WS68;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F122F2;
+Reference = WS69;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F12316;
+Reference = WS70;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F36697;
+Reference = WS71;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F366BB;
+Reference = WS72;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F2C946;
+Reference = WS73;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F2C94C;
+Reference = WS74;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F2C952;
+Reference = WS75;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F2C958;
+Reference = WS76;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F2C95E;
+Reference = WS77;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F2C964;
+Reference = WS78;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F2C96A;
+Reference = WS79;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F2C970;
+Reference = WS80;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F2C99D;
+Reference = WS81;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F2C9A3;
+Reference = WS82;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F366E7;
+Reference = WS83;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F366ED;
+Reference = WS84;
+ValeurCmp = WS2812B;
+IdModule  = badge:WS2812B;
+EndCmp
+
+EndListe
