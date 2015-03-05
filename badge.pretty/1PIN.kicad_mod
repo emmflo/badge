@@ -1,0 +1,10 @@
+(module 1PIN (layer F.Cu) (tedit 54F86C09)
+  (fp_text reference REF** (at -0.11938 3.47726) (layer F.SilkS) hide
+    (effects (font (size 1.5 1.5) (thickness 0.15)))
+  )
+  (fp_text value 1PIN (at -0.01524 -3.34264) (layer F.Fab) hide
+    (effects (font (size 1.5 1.5) (thickness 0.15)))
+  )
+  (pad 1 thru_hole circle (at 0 0) (size 3.4 3.4) (drill 3) (layers *.Cu *.Mask F.SilkS)
+    (clearance 2))
+)
