@@ -1,6 +1,3 @@
-//
-// AVR_2812
-// 6 WS2812B LEDs
 // 8MHz internal osc
 //
 
@@ -12,6 +9,7 @@
 #include <util/delay.h>
 #include <stdint.h>
 #include <string.h>
+#include <stdio.h>
 
 //#define USART_BAUDRATE 9600
 //#define USART_BAUDRATE 38400 
@@ -35,9 +33,11 @@ volatile u8 temp_buf[NUM_LEDS+1];
 volatile u8 transfert = 0;
 volatile u8 state = FULL_TEST;
 volatile int iter_buff = 0;
+volatile int received = 0;
+volatile int dropped = 0;
 
 // declaration of our ASM function
-extern void output_grb(u8 * ptr, u16 count);
+//extern void output_grb(u8 * ptr, u16 count);
 
 u8 xor_it(u8 * p_buf)
 {
@@ -51,21 +51,32 @@ u8 xor_it(u8 * p_buf)
 
 }
 
-void set_color(u8 * p_buf, u8 led, u8 r, u8 g, u8 b)
-{
-	u16 index = 3*led;
-	p_buf[index++] = g;
-	p_buf[index++] = r;
-	p_buf[index] = b;  
+void uart_putchar(char c, FILE *stream) {
+	    if (c == '\n') {
+		            uart_putchar('\r', stream);
+			        }
+	        loop_until_bit_is_set(UCSR0A, UDRE0);
+		    UDR0 = c;
 }
+
+char uart_getchar(FILE *stream) {
+	    loop_until_bit_is_set(UCSR0A, RXC0); /* Wait until data exists. */
+	        return UDR0;
+}
+
+FILE uart_output = FDEV_SETUP_STREAM(uart_putchar, NULL, _FDEV_SETUP_WRITE);
+FILE uart_input = FDEV_SETUP_STREAM(NULL, uart_getchar, _FDEV_SETUP_READ);
+//FILE uart_io FDEV_SETUP_STREAM(uart_putchar, uart_getchar, _FDEV_SETUP_RW);
 
 int main(void)
 {
+	int step = 0;
+
 	u8 buf[NUM_LEDS+1];
 	u8 local_state;
 	u8 local_transfert;
   
-	DDRB = (1<<1);   // bit 4 is our output
+	//DDRB = (1<<1);   // bit 4 is our output
 
 	UCSR0B = (1<<RXEN0)|(1<<TXEN0);
 	UCSR0C = (1<<USBS0)|(3<<UCSZ00);
@@ -79,83 +90,39 @@ int main(void)
 
 	sei();
     
-	memset(buf, 10, sizeof(buf));
-	memset(temp_buf, 0, sizeof(temp_buf));
-
-	output_grb(buf, sizeof(buf));
-	_delay_ms(1000);
-
 	memset(buf, 0, sizeof(buf));
+	memset(temp_buf, 0, sizeof(temp_buf));
 
 	u8 count = 0;
 	u8 color = 0;
-        
-	while(1)
-	{
-		//output_grb(buf, sizeof(buf));
-		local_state = state;
-      		switch (local_state)
-		{
-			case FRAME:
-				local_transfert = transfert;
-				if(local_transfert == 2)
-				{
-					cli();
-					memcpy(&buf, &temp_buf, sizeof(buf));
-					sei();
-					transfert = 0;
-					local_transfert = 0;
-					state = '0';
-					output_grb(buf, sizeof(buf));
-					while (( UCSR0A & (1 << UDRE0 ) ) == 0) {};
-					UDR0 = DONE;
-					//_delay_ms(100);
-				}
-			break;
-			case TEST:
-				memset(buf, 50, sizeof(buf));
-				state = '0';
-			break;
-			case NONE:
-				memset(buf, 0, sizeof(buf));
-				state = '0';
-			break;
-			case FULL_TEST:
-				if(color == 0)
-					set_color(&buf, count, 20, 0, 0);
-				else if(color == 1)
-					set_color(&buf, count, 0, 20, 0);
-				else if(color == 2)
-					set_color(&buf, count, 0, 0, 20);
-				if(count < NUM_WS2812)
-				{
-					count++;
-				}
-				else
-				{
-					count = 0;
-					memset(buf, 10, sizeof(buf));
-					if(color < 2)
-					{
-						color++;
-					}
-					else
-					{
-						color = 0;
-					}
-				}
-			break;
-			
-		}
-		_delay_ms(50);
+
+	stdout = &uart_output;
+	stdin  = &uart_input;
+
+	//printf("Test\r\n");
+
+	for (step = 0x41; step <= 0x50; step += 0x01) {
+		while (state != 's') {};
+		received = 0;
+		dropped = 0;
+		printf("Using OSCCAL=%02X\r\n", step);
+		OSCCAL = step;		//do string at this calibration:
+		while (( UCSR0A & (1 << UDRE0 ) ) == 0) {};
+		//UDR0 = 'o';
+		while (state != 'd') {};
+		//while (( UCSR0A & (1 << UDRE0 ) ) == 0) {};
+		OSCCAL = 0x48;		//2MHz RC oscillator good guess
+		printf("dropped = %d; received = %d\r\n", dropped, received);
+
 	}
+	return 0;
+
 }
 
 ISR(USART_RX_vect, ISR_BLOCK)
 {
 	u8 received_byte;
 	received_byte = UDR0;
-	UDR0 = received_byte;
 	if(transfert == 1)
 	{
 		temp_buf[iter_buff] = received_byte;
@@ -169,12 +136,15 @@ ISR(USART_RX_vect, ISR_BLOCK)
 			{
 				iter_buff = 0;
 				transfert = 2;
+				received++;
 			}
 			else
 			{
 				transfert = 0;
 				iter_buff = 0;
+				dropped++;
 			}
+			UDR0 = DONE;
 
 		}
 	}
@@ -184,8 +154,13 @@ ISR(USART_RX_vect, ISR_BLOCK)
 		switch(state)
 		{
 			case FRAME:
+				UDR0 = received_byte;
 				transfert = 1;
-			break;
+				break;
+			case 's':
+			case 'd':
+				UDR0 = received_byte;
+				break;
 		}
 	}
 

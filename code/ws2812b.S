@@ -11,7 +11,7 @@
 ; r24:25 = 16-bit count
 ; r26:27 (X) = data pointer
 
-.equ      OUTBIT,   4
+.equ      OUTBIT,   1
 
 
 .global output_grb
