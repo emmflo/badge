@@ -4,9 +4,9 @@
 #include <avr/interrupt.h>
 #include <util/delay.h>
 #include <stdio.h>
-#define USART_BAUDRATE 230400 
-//#define BAUD_PRESCALE (((( F_CPU / 16) + ( USART_BAUDRATE / 2) ) / ( USART_BAUDRATE ) ) - 1)
-#define BAUD_PRESCALE 0x0001
+#define USART_BAUDRATE 115200 
+#define BAUD_PRESCALE (((( F_CPU / 16) + ( USART_BAUDRATE / 2) ) / ( USART_BAUDRATE ) ) - 1)
+//#define BAUD_PRESCALE 0x0001
 
 void uart_putchar(char c, FILE *stream) {
 	    if (c == '\n') {

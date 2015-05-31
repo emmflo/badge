@@ -1,12 +1,15 @@
 import pyglet
+
 from pyglet.image.codecs.pil import PILImageDecoder
 import serial
+import bluetooth
 
 window = pyglet.window.Window()
 img = pyglet.image.load('dot.png', decoder=PILImageDecoder())
 sprite = pyglet.sprite.Sprite(img)
 sprite.scale = 4
 batch = pyglet.graphics.Batch()
+first = True
 
 def xor_it(data):
     temp = 0
@@ -21,7 +24,10 @@ class Badge:
         self.batch = batch
         self.pixel_grid = []
         self.pixel_data = []
-        self.ser = serial.Serial(device, baud, timeout=0)
+        #self.ser = serial.Serial(device, baud, timeout=timeout, bytesize=8, stopbits=2)
+        #self.ser = serial.Serial("/dev/ttyACM0", 115200, timeout=1, bytesize=8, stopbits=2)
+        self.socket = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
+        self.socket.connect(('30:15:01:07:10:61', 1))
         pyglet.clock.schedule_interval(self.sendFrame, 1/24)
 
     def makeGrid(self, start_x, start_y, end_x, end_y, rows, columns, zigzag, top):
@@ -69,24 +75,20 @@ class Badge:
         return pixel_data
 
     def sendFrame(self, dt):
+        global first
         frame = self.frame
-        print(frame)
-        self.ser.write([ord("1")])
-        try:
-            while self.ser.read(1)[0] != ord("1"): pass
-        except (IndexError):
-            pass
-        check = xor_it(frame)
-        self.ser.write(frame)
-        self.ser.write([check])
-        try:
-            while self.ser.read(1)[0] != 6: pass
-        except (IndexError):
-            pass
+        #print(frame)
+        #self.ser.flushOutput()
+        #self.waitForByte(1)
+        if first:
+            first = False
+        else:
+            while self.socket.recv(1)[0] != 1: pass
+        self.socket.send(bytes([5] + frame))
 
-badge = Badge(batch, "/dev/ttyACM0", 230400, 1)
+badge = Badge(batch, "/dev/ttyACM0", 115200, 1)
 #badge = Badge(batch, "/dev/ttyACM0", 38400, 1)
-badge.ser.write([ord('2')])
+#badge.ser.write([ord('2')])
 
 
 #pixel_grid = [(20, 20), (20, 40), (20, 60)]
@@ -98,16 +100,17 @@ def on_mouse_motion(x, y, dx, dy):
 
 @window.event
 def on_mouse_press(x, y, buttons, modifiers):
-    if buttons & pyglet.window.mouse.RIGHT:
-        badge.sendFrame(0)
+    if buttons & pyglet.window.mouse.LEFT:
+        #badge.sendFrame(0)
+        pass
  
 @window.event
 def on_draw():
     global frame
     window.clear()
     sprite.draw()
-    #sendFrame(0, frame)
     badge.getPixelData()
+    #badge.sendFrame(0)
     batch.draw()
 
 

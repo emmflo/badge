@@ -1,13 +1,11 @@
 #define F_CPU 7372800
+//#define F_CPU 8000000
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
-#include <util/delay.h>
-#include <stdint.h>
-#include <string.h>
-#include <stdio.h>
 
-#define USART_BAUDRATE 230400
+#define USART_BAUDRATE 115200
+//#define USART_BAUDRATE 9600
 #define BAUD_PRESCALE (((( F_CPU / 16) + ( USART_BAUDRATE / 2) ) / ( USART_BAUDRATE ) ) - 1)
 
 typedef uint8_t   u8;
@@ -23,7 +21,7 @@ int main(void)
 
 	UCSR0B |= (1 << RXCIE0);
 
-	OSCCAL=0x48;
+	OSCCAL=0x52;
 
 	sei();
 

@@ -3,7 +3,7 @@ MMCU=atmega328
 all: clean main upload 
 
 main: main.o
-	avr-gcc -g -mmcu=$(MMCU) -o test.elf test3.o 
+	avr-gcc -g -mmcu=$(MMCU) -o test3.elf test3.o 
 
 main.o:
 	avr-gcc -g -Os -mmcu=$(MMCU) -c test3.c 
@@ -15,4 +15,4 @@ clean:
 	-rm *.o *.elf *.hex
 
 upload:
-	avrdude -p $(MMCU) -c dragon_isp -P usb -B 4 -u -U flash:w:test.elf 
+	avrdude -p $(MMCU) -c dragon_isp -P usb -B 4 -u -U flash:w:test3.elf 
