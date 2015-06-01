@@ -1,7 +1,6 @@
 import pyglet
 
 from pyglet.image.codecs.pil import PILImageDecoder
-import serial
 import bluetooth
 
 window = pyglet.window.Window()

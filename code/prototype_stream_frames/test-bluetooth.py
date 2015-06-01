@@ -1,4 +1,3 @@
-import serial
 import time
 import pyglet
 import itertools
@@ -52,7 +51,7 @@ def main(path, inc):
     start_time = time.time()
     while True:
         sendFrame(patterns[int(count)])
-        time.sleep(0.03) 
+        #time.sleep(0.03) 
         if count >= num_frames-1:
             count = 0
         else:
