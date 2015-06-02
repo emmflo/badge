@@ -1,5 +1,7 @@
 #ifndef FONT_H
 #define FONT_H
 
-extern u8 font[];
+typedef uint16_t   u16;
+extern const u16 font[]; 
+
 #endif
