@@ -68,12 +68,23 @@ u8 non_bloquant_receive_byte()
 	return byte;
 }
 
-void display_char(u8 * p_buf, char c, int offset, u8 r, u8 g, u8 b) {
+void display_char(u8 * p_buf, unsigned char c, int offset, u8 r, u8 g, u8 b) {
 	if(offset < 12 && offset > -3) {
 
 	int i = 0;
 	int j = 0;
-	u16 font_c = pgm_read_word(&font[c-' ']);
+	u16 font_c;
+
+	if(c >= 32 && c <= 126) {
+		font_c = pgm_read_word(&font[c-32]);
+	}
+	else if(c >= 160 && c <= 255) {
+		send_byte(c);
+		font_c = pgm_read_word(&font_extend[c-160]);
+	}
+	else {
+		font_c = pgm_read_word(&font[0]);
+	}
 
 	u8 left_bound = 0;
 	u8 right_bound = 3;
@@ -99,7 +110,7 @@ void display_char(u8 * p_buf, char c, int offset, u8 r, u8 g, u8 b) {
 	}
 }
 
-int scrolling_text(u8 * p_buf, char * text, u8 reset, int new_offset, int shift, u8 r, u8 g, u8 b) {
+int scrolling_text(u8 * p_buf, unsigned char * text, u8 reset, int new_offset, int shift, u8 r, u8 g, u8 b) {
 	static int offset = 12;
 	int i=0;
 	int o=0;
@@ -143,7 +154,7 @@ void delay_ms(int n) {
 int main(void)
 {
 	u8 buf[NUM_LEDS];
-	char text_buf[256] = {0};
+	unsigned char text_buf[256] = {32};
 	int i = 0;
 	int r = 0;
 	u8 byte = 0;
@@ -160,7 +171,7 @@ int main(void)
 	DDRB = (1<<1);   // PB1
 
 	UCSR0B = (1<<RXEN0)|(1<<TXEN0);
-	UCSR0C = (0<<USBS0)|(3<<UCSZ00);
+	UCSR0C = (3<<UCSZ00);
 
 	UBRR0H = (unsigned char)(BAUD_PRESCALE>>8);
 	UBRR0L = (unsigned char)BAUD_PRESCALE;

@@ -44,7 +44,8 @@ def sendFrameNoCheck(frame):
 
 
 def sendText(text):
-    sendSomething([4] + [ord(x) for x in text])
+    t = text.encode('latin-1', 'replace')
+    sendSomething([4] + list(t))
 
 def test():
     while True:

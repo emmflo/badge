@@ -41,6 +41,26 @@ for num in range(96):
 string += "};\n"
 print(string)
 
+string += """extern const u16 font_extend[] PROGMEM = \n{\n"""
+for num in range(96, 192):
+    temp_string = ""
+    for i in range(char_height):
+        for j in range(char_width):
+            if lines[(char_height*(num//16)+i)*width+(num%16)*char_width+j] == "1":
+                temp_string += "1"
+                print("\u25AE", end="")
+            else:
+                temp_string += "0"
+                print(" ", end="")
+        print("")
+    print("")
+    string += "\t0b"
+    string += temp_string[::-1]
+    string += ",\n"
+string += "};\n"
+print(string)
+
+
 c = open("font.c", 'w')
 c.write(string)
 c.close()
