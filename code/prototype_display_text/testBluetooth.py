@@ -7,7 +7,7 @@ from pyglet.image.codecs.pil import PILImageDecoder
 
 #ser = serial.Serial("/dev/rfcomm0", 9600)
 socket = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
-socket.connect(('30:15:01:07:10:61', 1))
+socket.connect(('30:15:01:07:02:21', 1))
 first = True
 
 def sendSomething(thing):
