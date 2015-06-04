@@ -26,8 +26,9 @@ class Badge:
         #self.ser = serial.Serial(device, baud, timeout=timeout, bytesize=8, stopbits=2)
         #self.ser = serial.Serial("/dev/ttyACM0", 115200, timeout=1, bytesize=8, stopbits=2)
         self.socket = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
-        self.socket.connect(('30:15:01:07:10:61', 1))
-        pyglet.clock.schedule_interval(self.sendFrame, 1/24)
+        self.socket.connect(('30:15:01:07:02:21', 1))
+        pyglet.clock.schedule_interval(self.sendFrameNoCheck, 1/30)
+        self.first = True
 
     def makeGrid(self, start_x, start_y, end_x, end_y, rows, columns, zigzag, top):
         space_w = abs(end_x - start_x) // (columns - 1)
@@ -73,17 +74,38 @@ class Badge:
         #print(self.frame)
         return pixel_data
 
-    def sendFrame(self, dt):
-        global first
-        frame = self.frame
-        #print(frame)
-        #self.ser.flushOutput()
-        #self.waitForByte(1)
-        if first:
-            first = False
+    def sendSomething(self, thing):
+        if self.first:
+            self.first = False
         else:
             while self.socket.recv(1)[0] != 1: pass
-        self.socket.send(bytes([5] + frame))
+        self.socket.send(bytes(thing[:1]))
+        while self.socket.recv(1)[0] != 3: pass
+        self.socket.send(bytes(thing[1:]))
+
+    def setBackgroundColor(self, r, g, b):
+        self.sendSomething([6] + [r] + [g] + [b])
+
+    def setTextColor(self, r, g, b):
+        self.sendSomething([7] + [r] + [g] + [b])
+
+    def setSleepTime(self, time):
+        self.sendSomething([8] + [time])
+
+    def sendFrame(self, dt):
+        frame = self.frame
+        self.sendSomething([5] + frame)
+
+    def sendFrameNoCheck(self, dt):
+        frame = self.frame
+        if self.first:
+            self.first = False
+        else:
+            while self.socket.recv(1)[0] != 1: pass
+        self.socket.send(bytes([5]))
+        #time.sleep(0.001)
+        self.socket.send(bytes(frame))
+
 
 badge = Badge(batch, "/dev/ttyACM0", 115200, 1)
 #badge = Badge(batch, "/dev/ttyACM0", 38400, 1)
